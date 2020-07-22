@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+        body {
+            font-size: 14px;
+            position: absolute;
+            width: 800px;
+            background-color: #dfdfd8;
+            font-family: 'Playfair Display';
+        }
+        #navbar {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 280px;
+            height: 100%;
+            background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/criss-cross.png);
+            padding-top: 10px;
+            z-index: 1;
+            padding-right: 19px;
+            
+        }
+        a {
+            text-decoration: none;
+            color: dimgray;
+        }
+        #menu 
+        {
+            list-style-type: none;
+            
+        }
+        .header-menu {
+            padding: 10px;
+            margin-left: 20px;
+        }
+        
+        #main-doc {
+            position: relative;
+            margin-left: 270px;
+            padding-top: 0px;
+            padding-left: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            top: 0px;
+            width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        @media (min-width: 200px){
+        #ruleset {
+         position: relative;
+         display: inline-block;
+         height: 380px;
+         width: 640px;
+        padding: 75px;
+        }
+        }
+        #table {
+           border: 1px solid black; 
+           border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            
+        
+            
+        }
+        
+        td {
+            background-color: #FFFAF0;
+           
+           
+
+        }
+        th {
+            background-color: #c0c0c0;
+        }
+        
+        .lcont {
+            margin-bottom: 6px;
+           
+            
+        }
+        #shrink {
+            position: relative;
+            display: inline-block;
+            
+        }
+        ol {
+            display: inline-block;
+            max-width: 800px;
+        }
+        pre {
+           flex-wrap: wrap;
+          
+        }
+        dl {
+            display: block;
+        }
+        #mar-bor-pad {
+            position: relative;
+            padding: 110px;
+        }
+        header {
+            font-size: 27px;
+            margin-top: 22px;
+        }
+        
+        code {
+            background-color: beige;
+        }
+        pre {
+            background-color: beige;
+
+        }
