@@ -6,25 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/flaticon.css">
 
 </head>
 
 <body>
     <nav id="navbar">
-        <header class="header-menu">CSS DOCUMENTATION</header>
-        <ul id="menu">
-            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
-            <li><a href="#Anatomy_of_a_CSS_ruleset" class="nav-link">Anatomy of a CSS ruleset</a></li>
-            <li><a href="#Selecting_multiple_elements" class="nav-link">Selecting multiple elements</a></li>
-            <li><a href="#Different_types_of_selectors" class="nav-link">Different types of selectors</a></li>
-            <li><a href="#Fonts_and_text" class="nav-link">Fonts and text</a></li>
-            <li><a href="#Boxes,_boxes,_it's_all_about_boxes" class="nav-link">Boxes, boxes, it's all about boxes</a></li>
-            <li><a href="#Changing_the_page_color" class="nav-link">Changing the page color</a></li>
-            <li><a href="#Sorting_the_body_out" class="nav-lkink">Sorting the body out</a></li>
-            <li><a href="#Positioning_and_styling_our_main_page_title" class="nav-link">Positioning and styling our main page title</a></li>
-            <li><a href="#Centering_the_image" class="nav-link">Centering the image</a></li>
-            <li><a href="#Reference" class="nav-link">Reference</a></li>
-        </ul>
+        <div class="dropdownMenu"><i class="flaticon-menu"></i>
+            <header class="header-menu">CSS DOCUMENTATION</header>
+            <ul id="menu" class="dropdownContent">
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Anatomy_of_a_CSS_ruleset" class="nav-link">Anatomy of a CSS ruleset</a></li>
+                <li><a href="#Selecting_multiple_elements" class="nav-link">Selecting multiple elements</a></li>
+                <li><a href="#Different_types_of_selectors" class="nav-link">Different types of selectors</a></li>
+                <li><a href="#Fonts_and_text" class="nav-link">Fonts and text</a></li>
+                <li><a href="#Boxes,_boxes,_it's_all_about_boxes" class="nav-link">Boxes, boxes, it's all about boxes</a></li>
+                <li><a href="#Changing_the_page_color" class="nav-link">Changing the page color</a></li>
+                <li><a href="#Sorting_the_body_out" class="nav-lkink">Sorting the body out</a></li>
+                <li><a href="#Positioning_and_styling_our_main_page_title" class="nav-link">Positioning and styling our main page title</a></li>
+                <li><a href="#Centering_the_image" class="nav-link">Centering the image</a></li>
+                <li><a href="#Reference" class="nav-link">Reference</a></li>
+            </ul>
+        </div>
     </nav>
     <main id="main-doc">
         <section id="Introduction" class="main-section">
@@ -37,10 +40,10 @@
                     HTML documents. For example, to select all the paragraph elements on an HTML page and turn the text within them red, you'd write this CSS:</p>
                 <pre>
                 <code>
-    p {
-    color: red;
-    }</code>
-                </pre>
+                    p {
+                    color: red;
+                    }</code>
+                    </pre>
             </article>
         </section>
         <section id="Anatomy_of_a_CSS_ruleset" class="main-section">
@@ -67,9 +70,9 @@
                 <p>You can also select multiple types of elements and apply a single rule set to all of them. Multiple selectors are separated by commas. For example:</p>
                 <pre>
                 <code>
-    p, li, h1 {
-     color: red;
-    }
+                p, li, h1 {
+                color: red;
+                }
                 </code>
                 </pre>
             </article>
@@ -83,32 +86,32 @@
                     <thead id="thead">
                         <tr>
                             <th>Selector name</th>
-                            <th>What does it select</th>
+                            <th class="tableHeader">What does it select</th>
                             <th>Example</th>
                         </tr>
                         <tr>
                             <td>Element selector (sometimes called a tag or type selector)</td>
-                            <td>All HTML element(s) of the specified type.</td>
+                            <td class="tableHeader">All HTML element(s) of the specified type.</td>
                             <td><code>p</code> Selects <code>&lt;p&gt;</code></td>
                         </tr>
                         <tr>
                             <td>ID selector</td>
-                            <td>The element on the page with the specified ID. On a given HTML page, it's best practice to use one element per ID (and of course one ID per element) even though you are allowed to use same ID for multiple elements.</td>
+                            <td class="tableHeader">The element on the page with the specified ID. On a given HTML page, it's best practice to use one element per ID (and of course one ID per element) even though you are allowed to use same ID for multiple elements.</td>
                             <td><code>#my-id</code> Selects <code>&lt;p id="my-id"&gt;</code> and <code>&lt;a id="my-id"&gt;</code></td>
                         </tr>
                         <tr>
                             <td>Class selector</td>
-                            <td>The element(s) on the page with the specified class (multiple class instances can appear on a page).</td>
+                            <td class="tableHeader">The element(s) on the page with the specified class (multiple class instances can appear on a page).</td>
                             <td><code>.my-class</code> Selects <code>&lt;p class="my-class"&gt;</code> and <code>&lt;a class="my-class"&gt;</code></td>
                         </tr>
                         <tr>
                             <td>Attribute selector</td>
-                            <td>The element(s) on the page with the specified attribute.</td>
+                            <td class="tableHeader">The element(s) on the page with the specified attribute.</td>
                             <td><code>img[src]</code> Selects <code>&lt;img src="myimage.png"&gt;</code> but not <code>&lt;img&gt;</code></td>
                         </tr>
                         <tr>
                             <td>Pseudo-class selector</td>
-                            <td>The specified element(s), but only when in the specified state (e.g. being hovered over).</td>
+                            <td class="tableHeader">The specified element(s), but only when in the specified state (e.g. being hovered over).</td>
                             <td><code>a:hover</code> Selects <code>&lt;a&gt;</code>, but only when the mouse pointer is hovering over the link.</td>
                         </tr>
                     </thead>
@@ -124,8 +127,8 @@
                     <li class="lcont">First of all, go back and find the <a href="/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like#Font">output from Google Fonts</a> that you stored somewhere safe. Add the <code>&lt;link&gt;</code> element somewhere
                         inside your <code>index.html</code>'s head (again, anywhere between the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags). It'll look something like this:
                         <pre>
-                        <code class="codeFonts">
-&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"&gt;</code>
+<code class="codeFonts">&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" 
+rel="stylesheet"&gt;</code>
                         </pre> This code links your page to a stylesheet that downloads the Open Sans font family along with your web page and enables you to set it on your HTML elements using your own style sheet.
                     </li>
                     <li class="lcont">Next, delete the existing rule you have in your <code>style.css</code> file. It was a good test, but red text doesn't actually look very good.</li>
@@ -134,12 +137,12 @@
                         <pre>
                         <code class="codeFonts">
     html {
-        font-size: 10px; /* px means "pixels":
-        the base font size is now 10 pixels high */
-        font-family: "Open Sans", sans-serif; 
-        /* this should be the rest of the
-        output you got from Google fonts */
-    }
+    font-size: 10px; /* px means "pixels":
+    the base font size is now 10 pixels high  */
+    font-family: "Open Sans", sans-serif; 
+    /* this should be the rest of the
+    output you got from Google fonts */
+                        }
                         </code>
                         </pre>
                     </li>
@@ -147,16 +150,16 @@
                         spacing on the body content to make it a bit more readable:
                         <pre>
                         <code>
-    h1 {
-        font-size: 60px;
-        text-align: center;
+   h1 {
+    font-size: 60px;
+    text-align: center;
     }
 
     p, li {
-        font-size: 16px;    
-        line-height: 2;
-        letter-spacing: 1px;
-    }
+     font-size: 16px;    
+     line-height: 2;
+     letter-spacing: 1px;
+                         }                     
                         </code>
                         </pre> You can adjust these px values to whatever you like to get your design looking how you want.
                     </li>
@@ -173,7 +176,9 @@
                     <li><code>border</code>, the solid line that sits just outside the padding.</li>
                     <li><code>margin</code>, the space around the outside of the element.</li>
                 </ul>
-                <img id="mar-bor-pad" src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/18/9443/63d72109948ccedb5e0f0dd5f9cb3716/box-model.png" alt="image showing margin, borer and padding">
+                <div id="mar-bor-pad">
+                    <img src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/18/9443/63d72109948ccedb5e0f0dd5f9cb3716/box-model.png" alt="image showing margin, borer and padding">
+                </div>
                 <p>In this section we also use:</p>
                 <ul>
                     <li><code>width</code> (of an element).</li>
@@ -191,7 +196,7 @@
                 <code>
     html {
         background-color: #00539F;
-    }
+        }
                 </code>
                 </pre>
                 <p>This rule sets a background color for the whole page.</p>
@@ -208,7 +213,7 @@
         background-color: #FF9500;
         padding: 0 20px 20px 20px;
         border: 5px solid black;
-    }
+        }
                 </code>
                 </pre>
                 <p>Now for the <code>&lt;body&gt;</code> element. There are quite a few declarations here, so let's go through them all one by one:</p>
@@ -229,12 +234,12 @@
             <article>
                 <pre>
                 <code>
-    h1 {
-        margin: 0;
-        padding: 20px 0;    
-        color: #00539F;
-        text-shadow: 3px 3px 1px black;
-    }
+h1 {
+    margin: 0;
+    padding: 20px 0;    
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+}
                 </code>
                 </pre>
                 <p>Browsers apply some default styling to the <code>&lt;h1&gt;</code> element (among others), even when you haven't applied any CSS at all! That might sound like a bad idea, but we want even an unstyled webpage to have basic readability.
@@ -254,10 +259,10 @@
             <article>
                 <pre>
                 <code>
-    img {
-        display: block;
-        margin: 0 auto;
-    }
+ img {
+    display: block;
+    margin: 0 auto;
+}
                 </code>
                 </pre>
                 <p>Finally, we'll center the image to make it look better. We could use the <code>margin: 0 auto</code> trick again as we did earlier for the body, but we also need to do something else. The <code>&lt;body&gt;</code> element is <strong>block level</strong>,
@@ -274,7 +279,7 @@
     </main>
 
 
-
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 
