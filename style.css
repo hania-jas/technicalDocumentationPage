@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(playfair/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
 body {
     font-size: 14px;
     position: absolute;
