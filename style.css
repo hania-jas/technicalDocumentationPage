@@ -139,6 +139,9 @@ code {
         position: absolute;
         z-index: 1;
     }
+    #reference {
+        padding-bottom: 15px;
+    }
 }
 
 @media (min-width: 1024px) {
