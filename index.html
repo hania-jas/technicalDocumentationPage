@@ -20,10 +20,12 @@
                 <li><a href="#Selecting_multiple_elements" class="nav-link">Selecting multiple elements</a></li>
                 <li><a href="#Different_types_of_selectors" class="nav-link">Different types of selectors</a></li>
                 <li><a href="#Fonts_and_text" class="nav-link">Fonts and text</a></li>
-                <li><a href="#Boxes,_boxes,_it's_all_about_boxes" class="nav-link">Boxes, boxes, it's all about boxes</a></li>
+                <li><a href="#Boxes,_boxes,_it's_all_about_boxes" class="nav-link">Boxes, boxes, it's all about
+                        boxes</a></li>
                 <li><a href="#Changing_the_page_color" class="nav-link">Changing the page color</a></li>
                 <li><a href="#Sorting_the_body_out" class="nav-lkink">Sorting the body out</a></li>
-                <li><a href="#Positioning_and_styling_our_main_page_title" class="nav-link">Positioning and styling our main page title</a></li>
+                <li><a href="#Positioning_and_styling_our_main_page_title" class="nav-link">Positioning and styling our
+                        main page title</a></li>
                 <li><a href="#Centering_the_image" class="nav-link">Centering the image</a></li>
                 <li><a href="#Reference" class="nav-link">Reference</a></li>
             </ul>
@@ -55,13 +57,16 @@
                 <p>The whole structure is called a <em>rule set</em> (but often "rule" for short). Note the names of the individual parts:</p>
                 <dl>
                     <dt>Selector</dt>
-                    <dd>The HTML element name at the start of the rule set. It selects the element(s) to be styled (in this case, <code>&lt;p&gt;</code> elements). To style a different element, just change the selector.</dd>
+                    <dd>The HTML element name at the start of the rule set. It selects the element(s) to be styled (in this case, <code>&lt;p&gt;</code> elements). To style a different element, just change the selector.
+                    </dd>
                     <dt>Declaration</dt>
-                    <dd>A single rule like <code>color: red;</code> specifying which of the element's <em>properties</em> you want to style.</dd>
+                    <dd>A single rule like <code>color: red;</code> specifying which of the element's
+                        <em>properties</em> you want to style.</dd>
                     <dt>Properties</dt>
                     <dd>Ways in which you can style a given HTML element. (In this case, <code>color</code> is a property of the <code>&lt;p&gt;</code> elements.) In CSS, you choose which properties you want to affect in your rule.</dd>
                     <dt>Property value</dt>
-                    <dd>To the right of the property, after the colon, we have the <em>property</em> value, which chooses one out of many possible appearances for a given property (there are many <code>color</code> values besides <code>red</code>).</dd>
+                    <dd>To the right of the property, after the colon, we have the <em>property</em> value, which chooses one out of many possible appearances for a given property (there are many
+                        <code>color</code> values besides <code>red</code>).</dd>
                 </dl>
             </article>
         </section>
@@ -98,17 +103,20 @@
                         <tr>
                             <td>ID selector</td>
                             <td class="tableHeader">The element on the page with the specified ID. On a given HTML page, it's best practice to use one element per ID (and of course one ID per element) even though you are allowed to use same ID for multiple elements.</td>
-                            <td><code>#my-id</code> Selects <code>&lt;p id="my-id"&gt;</code> and <code>&lt;a id="my-id"&gt;</code></td>
+                            <td><code>#my-id</code> Selects <code>&lt;p id="my-id"&gt;</code> and
+                                <code>&lt;a id="my-id"&gt;</code></td>
                         </tr>
                         <tr>
                             <td>Class selector</td>
                             <td class="tableHeader">The element(s) on the page with the specified class (multiple class instances can appear on a page).</td>
-                            <td><code>.my-class</code> Selects <code>&lt;p class="my-class"&gt;</code> and <code>&lt;a class="my-class"&gt;</code></td>
+                            <td><code>.my-class</code> Selects <code>&lt;p class="my-class"&gt;</code> and
+                                <code>&lt;a class="my-class"&gt;</code></td>
                         </tr>
                         <tr>
                             <td>Attribute selector</td>
                             <td class="tableHeader">The element(s) on the page with the specified attribute.</td>
-                            <td><code>img[src]</code> Selects <code>&lt;img src="myimage.png"&gt;</code> but not <code>&lt;img&gt;</code></td>
+                            <td><code>img[src]</code> Selects <code>&lt;img src="myimage.png"&gt;</code> but not
+                                <code>&lt;img&gt;</code></td>
                         </tr>
                         <tr>
                             <td>Pseudo-class selector</td>
@@ -123,10 +131,12 @@
         <section id="Fonts_and_text" class="main-section">
             <header>Fonts and text</header>
             <article class="fontsArticle">
-                <p>Now that we've explored some CSS basics, let's start adding some more rules and information to our <code>style.css</code> file to make our example look nice. Let's start by getting our fonts and text to look a little better.</p>
+                <p>Now that we've explored some CSS basics, let's start adding some more rules and information to our
+                    <code>style.css</code> file to make our example look nice. Let's start by getting our fonts and text to look a little better.</p>
                 <ol class="orderedListFontsArticle">
-                    <li class="lcont">First of all, go back and find the <a href="/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like#Font">output from Google Fonts</a> that you stored somewhere safe. Add the <code>&lt;link&gt;</code> element somewhere
-                        inside your <code>index.html</code>'s head (again, anywhere between the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags). It'll look something like this:
+                    <li class="lcont">First of all, go back and find the <a href="/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like#Font">output
+                            from Google Fonts</a> that you stored somewhere safe. Add the <code>&lt;link&gt;</code> element somewhere inside your <code>index.html</code>'s head (again, anywhere between the
+                        <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags). It'll look something like this:
                         <pre>
 <code class="codeFonts">&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" 
 rel="stylesheet"&gt;</code>
@@ -134,7 +144,8 @@ rel="stylesheet"&gt;</code>
                     </li>
                     <li class="lcont">Next, delete the existing rule you have in your <code>style.css</code> file. It was a good test, but red text doesn't actually look very good.</li>
                     <li class="lcont">Add the following lines in its place, replacing the placeholder line with the actual <code>font-family</code> line you got from Google Fonts. (<code>font-family</code> just means the font(s) you want to use for your text.) This rule
-                        first sets a global base font and font size for the whole page (since <code>&lt;html&gt;</code> is the parent element of the whole page, and all elements inside it inherit the same <code>font-size</code> and <code>font-family</code>):
+                        first sets a global base font and font size for the whole page (since <code>&lt;html&gt;</code> is the parent element of the whole page, and all elements inside it inherit the same
+                        <code>font-size</code> and <code>font-family</code>):
                         <pre>
                         <code class="codeFonts">
     html {
@@ -145,8 +156,8 @@ rel="stylesheet"&gt;</code>
                         </code>
                         </pre>
                     </li>
-                    <li class="lcont">Now we'll set font sizes for text-containing elements inside the HTML body (<code>&lt;h1&gt;</code>, <code>&lt;li&gt;</code>, and <code>&lt;p&gt;</code>). We'll also center the text of our heading and set some line height and letter
-                        spacing on the body content to make it a bit more readable:
+                    <li class="lcont">Now we'll set font sizes for text-containing elements inside the HTML body (
+                        <code>&lt;h1&gt;</code>, <code>&lt;li&gt;</code>, and <code>&lt;p&gt;</code>). We'll also center the text of our heading and set some line height and letter spacing on the body content to make it a bit more readable:
                         <pre>
                         <code>
    h1 {
@@ -218,13 +229,15 @@ rel="stylesheet"&gt;</code>
                 <p>Now for the <code>&lt;body&gt;</code> element. There are quite a few declarations here, so let's go through them all one by one:</p>
                 <ul>
                     <li><code>width: 600px;</code> — this forces the body to always be 600 pixels wide.</li>
-                    <li><code>margin: 0 auto;</code>— When you set two values on a property like <code>margin</code> or <code>padding</code>, the first value affects the element's top <strong>and</strong> bottom side (make it <code>0</code> in this case),
-                        and the second value the left <strong>and</strong> right side (here, <code>auto</code> is a special value that divides the available horizontal space evenly between left and right).</li>
-                    <li><code>background-color: #FF9500; </code>— as before, this sets the element's background color. We've used a sort of reddish orange for the body as opposed to dark blue for the <code>&lt;html&gt;</code> element, but feel free to go
-                        ahead and experiment.</li>
+                    <li><code>margin: 0 auto;</code>— When you set two values on a property like <code>margin</code> or
+                        <code>padding</code>, the first value affects the element's top <strong>and</strong> bottom side (make it <code>0</code> in this case), and the second value the left <strong>and</strong> right side (here, <code>auto</code> is a
+                        special value that divides the available horizontal space evenly between left and right).</li>
+                    <li><code>background-color: #FF9500; </code>— as before, this sets the element's background color. We've used a sort of reddish orange for the body as opposed to dark blue for the
+                        <code>&lt;html&gt;</code> element, but feel free to go ahead and experiment.</li>
                     <li><code>padding: 0 20px 20px 20px;</code>we have four values set on the padding, to make a bit of space around our content. This time we are setting no padding on the top of the body, and 20 pixels on the left, bottom and right. The
                         values set top, right, bottom, left, in that order. As with <code>margin</code>, you can also use one, two or three values.</li>
-                    <li><code>border: 5px solid black;</code> — this takes values for the width, style and color of the border, in our case simply setting a 5-pixel–wide, solid black border on all sides of the body.</li>
+                    <li><code>border: 5px solid black;</code> — this takes values for the width, style and color of the border, in our case simply setting a 5-pixel–wide, solid black border on all sides of the body.
+                    </li>
                 </ul>
             </article>
         </section>
@@ -264,12 +277,12 @@ h1 {
 }
                 </code>
                 </pre>
-                <p>Finally, we'll center the image to make it look better. We could use the <code>margin: 0 auto</code> trick again as we did earlier for the body, but we also need to do something else. The <code>&lt;body&gt;</code> element is <strong>block level</strong>,
-                    meaning it takes up space on the page and can have margin and other spacing values applied to it. Images, on the other hand, are <strong>inline</strong> elements, meaning they can't. So to apply margins to the image, we have to give
-                    the image block-level behavior using <code>display: block;</code>.</p>
+                <p>Finally, we'll center the image to make it look better. We could use the <code>margin: 0 auto</code> trick again as we did earlier for the body, but we also need to do something else. The
+                    <code>&lt;body&gt;</code> element is <strong>block level</strong>, meaning it takes up space on the page and can have margin and other spacing values applied to it. Images, on the other hand, are <strong>inline</strong> elements, meaning
+                    they can't. So to apply margins to the image, we have to give the image block-level behavior using <code>display: block;</code>.</p>
             </article>
         </section>
-        <section id="Reference" class="main-section">
+        <section id="reference" class="main-section">
             <header>Reference</header>
             <article>
                 <p>All the documentation here is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">MDN</a></p>
